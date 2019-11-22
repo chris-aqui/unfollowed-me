@@ -28,6 +28,7 @@ class InstaBot:
         followers = self._get_names()
         not_following_back = [user for user in following if user not in followers]
         print(not_following_back)
+        print(len(not_following_back))
 
     def _get_names(self):
         sleep(2)
